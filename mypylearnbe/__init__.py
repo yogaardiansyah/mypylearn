@@ -1,6 +1,10 @@
+import subprocess
 from flask import Flask, render_template
 from flask_socketio import SocketIO, emit
-import subprocess
+
+"""
+Back End
+"""
 
 app = Flask(__name__)
 socketio = SocketIO(app, cors_allowed_origins="*")
